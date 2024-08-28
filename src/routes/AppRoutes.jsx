@@ -1,0 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+import HomePage from "../components/pages/HomePage";
+import LoginForm from "../components/pages/LoginForm";
+import RegisterForm from "../components/pages/RegisterForm";
+
+const AppRoutes = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/register" element={<RegisterForm />} />
+      <Route path="/login" element={<LoginForm />} />
+    </Routes>
+  );
+};
