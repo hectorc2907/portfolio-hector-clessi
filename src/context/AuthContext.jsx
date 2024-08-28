@@ -40,14 +40,18 @@ export const AuthProvider = ({ children }) => {
   };
 
   const checkAuth = async () => {
-    try {
-      const data = await refreshAccessToken();
-      setUser(data.user);
-    } catch {
-      setUser(null);
-    } finally {
+    if (user) {
+      try {
+        const data = await refreshAccessToken();
+        setUser(data.user);
+      } catch (error) {
+        console.error("Token refresh failed:", error);
+        setUser(null);
+      }
+    } else {
       setUser(null);
     }
+    setLoading(false);
   };
 
   useEffect(() => {

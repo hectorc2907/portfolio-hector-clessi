@@ -32,7 +32,7 @@ const RegisterForm = () => {
           {...register("password", { required: "Password is required" })}
           placeholder="Password"
         />
-        {errors.email && <p>{errors.email.message}</p>}
+        {errors.email && <p>{errors.password.message}</p>}
 
         <button type="submit">Register</button>
       </form>
