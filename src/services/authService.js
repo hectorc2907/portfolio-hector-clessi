@@ -10,6 +10,11 @@ export const loginUser = async (email, password) => {
   return response.data;
 };
 
+export const checkAuth = async () => {
+  const response = await axios.get("/auth/check-auth");
+  return response.data
+};
+
 export const refreshAccessToken = async () => {
   const response = await axios.post("/auth/refresh-token");
   return response.data;

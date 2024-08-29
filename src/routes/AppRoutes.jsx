@@ -3,7 +3,7 @@ import HomePage from "../components/pages/HomePage";
 import LoginForm from "../components/pages/LoginForm";
 import RegisterForm from "../components/pages/RegisterForm";
 import PrivateRoute from "./PrivateRoute";
-import AdminDashboad from "../components/admin/AdminDashboard";
+import AdminDashboard from "../components/admin/AdminDashboard";
 
 const AppRoutes = () => {
   return (
@@ -15,7 +15,7 @@ const AppRoutes = () => {
         path="/admin"
         element={
           <PrivateRoute>
-            <AdminDashboad />
+            <AdminDashboard />
           </PrivateRoute>
         }
       />
