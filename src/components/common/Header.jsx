@@ -4,8 +4,8 @@ import LogoSmall from "../ui/LogoSmall";
 
 const Header = () => {
   return (
-    <header>
-      <div className="ml-auto mr-auto max-w-[1200px] grid grid-cols-3 py-5">
+    <header className="backdrop-blur-[3px]">
+      <div className="ml-auto mr-auto max-w-[1200px] grid grid-cols-3 py-2 items-center">
         <div className="ml-5">
           <Link to="/">
             <Logo style={`w-52 hidden lg:block`} />
