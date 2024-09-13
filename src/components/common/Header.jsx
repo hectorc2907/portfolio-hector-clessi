@@ -1,13 +1,21 @@
+import { Link } from "react-router-dom";
 import Logo from "../ui/Logo";
+import LogoSmall from "../ui/LogoSmall";
 
 const Header = () => {
   return (
     <header>
-      <div className="ml-auto mr-auto max-w-[1200px] flex justify-between py-5">
+      <div className="ml-auto mr-auto max-w-[1200px] grid grid-cols-3 py-5">
         <div className="ml-5">
-          <Logo size={`w-16`} />
+          <Link to="/">
+            <Logo style={`w-52 hidden lg:block`} />
+          </Link>
+          <Link to="/">
+            <LogoSmall size={`w-12 md:block lg:hidden`} />
+          </Link>
         </div>
-        <div className="mr-5">punto2</div>
+        <div className="text-center">botonera</div>
+        <div className="mr-5 text-right">punto2</div>
       </div>
     </header>
   );
