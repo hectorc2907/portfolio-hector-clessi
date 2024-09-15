@@ -1,11 +1,16 @@
-import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import MainLogo from "./MainLogo";
+import SmallLogo from "./SmallLogo";
 
-const Logo = ({ style }) => {
+const Logo = () => {
   return (
-    <Link to="/">
-      <img className={`${style}`} src={logo} alt="Main Logo" />
-    </Link>
+    <div>
+      <div className="hidden md:flex w-56">
+        <MainLogo />
+      </div>
+      <div className="flex md:hidden w-11">
+        <SmallLogo />
+      </div>
+    </div>
   );
 };
 

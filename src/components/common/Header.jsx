@@ -1,22 +1,15 @@
 import Logo from "../ui/Logo";
-import LogoSmall from "../ui/LogoSmall";
-import LoginButton from "../ui/LoginButton";
-import HeaderButton from "../ui/HeaderButton";
-import SandwichButton from "../ui/SandwichButton";
 
 const Header = () => {
   return (
-    <header className="backdrop-blur-[3px]">
-      <div className="ml-auto mr-auto max-w-[1200px] grid lg:grid-cols-3 grid-cols-2 py-2 items-center">
-        <div className="ml-5">
-          <Logo style={`w-60 hidden lg:block`} />
-          <LogoSmall style={`w-12 md:block lg:hidden`} />
+    <>
+      <nav>
+        <div className="container flex justify-between items-center py-4 md:pt-4">
+          <Logo />
+          <div className="mr-5">punto2</div>
         </div>
-        <HeaderButton />
-        <LoginButton />
-        <SandwichButton />
-      </div>
-    </header>
+      </nav>
+    </>
   );
 };
 
