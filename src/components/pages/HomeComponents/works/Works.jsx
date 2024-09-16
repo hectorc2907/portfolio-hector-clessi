@@ -1,13 +1,26 @@
-import WorkCard from "./WorkCard";
+import Skills from "../../../ui/skills/Skills";
+import { motion } from "framer-motion";
 
 const Works = () => {
   return (
-    <section className="bg-blue-600 text-white w-full py-12 flex justify-center px-2 xl:px-0">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.3 }}
+      className="bg-black text-white w-full py-12 flex justify-center px-2 xl:px-0"
+    >
       <div className="container">
-        <h2 className="text-center text-4xl italic font-guerrilla">Works</h2>
-        <WorkCard />
+        <motion.h2
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5, delay: 0.4 }}
+          className="text-center text-4xl italic font-guerrilla"
+        >
+          Habilidades
+        </motion.h2>
+        <Skills />
       </div>
-    </section>
+    </motion.section>
   );
 };
 
