@@ -13,7 +13,7 @@ const Header = () => {
       <nav className="flex justify-center">
         <div className="container flex justify-between items-center py-4 md:pt-4">
           <Link to="/">
-            <Logo />
+            <Logo isOpen={isOpen} setIsOpen={setIsOpen} />
           </Link>
           <Menu />
           <LoginButton />
