@@ -1,7 +1,13 @@
+import Hero from "../../ui/hero/Hero";
+
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div className="flex flex-col items-center">
+      <div className="container">
+        <Hero />
+      </div>
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;

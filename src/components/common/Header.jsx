@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Logo from "../ui/header/Logo";
 import Menu from "../ui/header/Menu";
