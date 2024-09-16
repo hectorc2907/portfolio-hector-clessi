@@ -1,29 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const Options = [
-  {
-    id: 0,
-    title: "About Me",
-    link: "/about",
-  },
-  {
-    id: 1,
-    title: "Works",
-    link: "/works",
-  },
-  {
-    id: 2,
-    title: "Contact",
-    link: "/contact",
-  },
-];
+import { MenuOptions } from "../../../mocks/MenuOptions";
 
 const Menu = () => {
   return (
     <div className="hidden md:block">
       <ul className="flex items-center gap-6 text-gray-700">
-        {Options.map((option) => (
+        {MenuOptions.map((option) => (
           <li key={option.id} className="text-xl">
             <Link
               to={option.link}

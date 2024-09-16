@@ -1,28 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const Options = [
-  {
-    id: 0,
-    title: "About Me",
-    link: "/about",
-  },
-  {
-    id: 1,
-    title: "Works",
-    link: "/works",
-  },
-  {
-    id: 2,
-    title: "Contact",
-    link: "/contact",
-  },
-  {
-    id: 3,
-    title: "Login",
-    link: "/login",
-  },
-];
+import { MenuResponsiveOptions } from "../../../mocks/MenuResponsiveOptions";
 
 const ResponsiveMenu = ({ isOpen, setIsOpen }) => {
   return (
@@ -37,7 +15,7 @@ const ResponsiveMenu = ({ isOpen, setIsOpen }) => {
             className="text-xl font-semibold uppercase bg-blue-600 text-white py-10 m-6 rounded-3xl"
           >
             <ul className="flex flex-col items-center gap-10">
-              {Options.map((option) => (
+              {MenuResponsiveOptions.map((option) => (
                 <li key={option.id} onClick={() => setIsOpen(!isOpen)}>
                   <Link to={option.link}>{option.title}</Link>
                 </li>
