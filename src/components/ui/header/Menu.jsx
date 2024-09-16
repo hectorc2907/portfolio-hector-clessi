@@ -4,7 +4,7 @@ import { MenuOptions } from "../../../mocks/MenuOptions";
 
 const Menu = () => {
   return (
-    <div className="hidden md:block">
+    <div className="hidden lg:block">
       <ul className="flex items-center gap-6 text-white">
         {MenuOptions.map((option) => (
           <li key={option.id} className="text-xl">
