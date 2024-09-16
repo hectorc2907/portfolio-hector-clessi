@@ -1,11 +1,20 @@
+import FooterLogo from "../ui/footer/FooterLogo";
+import FooterMenu from "../ui/footer/FooterMenu";
+import FooterCopy from "../ui/footer/FooterCopy";
+import FooterNetwork from "../ui/footer/FooterNetwork";
+
 const Footer = () => {
   return (
-    <footer>
-      <div className="ml-auto mr-auto max-w-[1200px] flex justify-between py-5">
-        <div className="ml-5">punto1</div>
-        <div className="mr-5">punto2</div>
-      </div>
-    </footer>
+    <>
+      <footer className="flex justify-center bg-blue-900 pt-12 mt-12">
+        <div className="container grid grid-cols-1 md:grid-cols-3">
+          <FooterLogo />
+          <FooterMenu />
+          <FooterNetwork />
+        </div>
+      </footer>
+      <FooterCopy />
+    </>
   );
 };
 
