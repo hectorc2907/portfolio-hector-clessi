@@ -2,8 +2,7 @@ export const MainProjects = [
   {
     id: 0,
     title: "Portfolio Front-End React",
-    image:
-      "https://cdn.podimo.com/images/70fb6113-a6b1-4b3c-a948-219ac9ec6def_400x400.png",
+    icon: "https://cdn.podimo.com/images/70fb6113-a6b1-4b3c-a948-219ac9ec6def_400x400.png",
     technologies: ["html", "css", "javascript", "react"],
     repository: "https://github.com/hectorc2907/port-frontend",
     preview: "http://localhost:5173/",
@@ -13,5 +12,19 @@ export const MainProjects = [
     date: "16/9/2024",
     version: "1.0.0",
     delay: "0.8",
+    images: [
+      {
+        original: "https://isfap.com/wp-content/uploads/2022/10/test-stroop-isfap-1024x768.jpg",
+        thumbnail: "https://isfap.com/wp-content/uploads/2022/10/test-stroop-isfap-1024x768.jpg",
+      },
+      {
+        original: "https://www.usfhealthonline.com/wp-content/uploads/sites/2/2019/03/Quiz-USF-compressor-1-1024x768.jpg",
+        thumbnail: "https://www.usfhealthonline.com/wp-content/uploads/sites/2/2019/03/Quiz-USF-compressor-1-1024x768.jpg",
+      },
+      {
+        original: "https://maze.conductscience.com/wp-content/uploads/2017/10/Emergence_test_01__00000.jpg",
+        thumbnail: "https://maze.conductscience.com/wp-content/uploads/2017/10/Emergence_test_01__00000.jpg",
+      },
+    ],
   },
 ];

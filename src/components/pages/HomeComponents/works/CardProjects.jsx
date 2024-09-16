@@ -20,7 +20,7 @@ const CardProjects = () => {
               <p className="text-sm">Versión: {project.version}</p>
             </div>
             <div className="flex justify-center items-center">
-              <img src={project.image} alt="" className="w-32 rounded-full" />
+              <img src={project.icon} alt="" className="w-32 rounded-full" />
             </div>
             <div className="flex flex-col items-center gap-4">
               <p className="text-xl font-bold">{project.title}</p>
