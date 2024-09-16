@@ -1,4 +1,4 @@
-export const FaceUp = (delay) => {
+export const FadeUp = (delay) => {
   return {
     hidden: {
       opacity: 0,
@@ -15,7 +15,7 @@ export const FaceUp = (delay) => {
   };
 };
 
-export const FaceDown = (delay) => {
+export const FadeDown = (delay) => {
   return {
     hidden: {
       opacity: 0,
@@ -32,7 +32,7 @@ export const FaceDown = (delay) => {
   };
 };
 
-export const FaceLeft = (delay) => {
+export const FadeLeft = (delay) => {
   return {
     hidden: {
       opacity: 0,
@@ -49,7 +49,7 @@ export const FaceLeft = (delay) => {
   };
 };
 
-export const FaceRight = (delay) => {
+export const FadeRight = (delay) => {
   return {
     hidden: {
       opacity: 0,
