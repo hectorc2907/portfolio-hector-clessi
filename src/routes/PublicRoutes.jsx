@@ -5,6 +5,7 @@ import AboutMePage from "../components/pages/AboutComponents/AboutMePage";
 import WorksPage from "../components/pages/WorksComponents/WorksPage";
 import ContactPage from "../components/pages/ContactComponents/ContactPage";
 import Error404 from "../components/pages/Error404Components/Error404";
+import Project from "../components/pages/ProjectComponents/Project";
 
 const PublicRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const PublicRoutes = () => {
       <Route path="/about" element={<AboutMePage />} />
       <Route path="/works" element={<WorksPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/project/:id" element={<Project />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
   );
