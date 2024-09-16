@@ -12,7 +12,7 @@ const FooterNetwork = () => {
     <div div className="flex justify-center items-center text-white">
       <div className="flex flex-col">
         <h5 className="text-center py-3">Social Network</h5>
-        <div className="flex text-4xl grid grid-cols-3 gap-4">
+        <div className="text-4xl grid grid-cols-3 gap-4">
           <a href="https://www.linkedin.com/in/hector-clessi/" target="_blank">
             <FaLinkedin />
           </a>

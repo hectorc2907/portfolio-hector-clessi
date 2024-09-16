@@ -5,7 +5,7 @@ import SmallLogo from "./SmallLogo";
 const Logo = ({ setIsOpen }) => {
   return (
     <Link to="/">
-      <div className="hidden md:flex w-56">
+      <div className="hidden md:flex w-56 ml-5">
         <MainLogo />
       </div>
       <div
