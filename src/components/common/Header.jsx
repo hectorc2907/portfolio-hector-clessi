@@ -4,6 +4,7 @@ import Logo from "../ui/header/Logo";
 import Menu from "../ui/header/Menu";
 import LoginButton from "../ui/header/LoginButton";
 import MobileButton from "../ui/header/MobileButton";
+import ResponsiveMenu from "../ui/header/ResponsiveMenu";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,7 @@ const Header = () => {
           <MobileButton isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </nav>
+      <ResponsiveMenu isOpen={isOpen} />
     </>
   );
 };
