@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import Logo from "../ui/header/Logo";
 import Menu from "../ui/header/Menu";
 import LoginButton from "../ui/header/LoginButton";
@@ -11,14 +12,17 @@ const Header = () => {
   return (
     <>
       <nav className="flex justify-center">
-        <div className="container flex justify-between items-center py-4 md:pt-4">
-          <Link to="/">
-            <Logo isOpen={isOpen} setIsOpen={setIsOpen} />
-          </Link>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="container flex justify-between items-center py-4 md:pt-4"
+        >
+          <Logo setIsOpen={setIsOpen} />
           <Menu />
           <LoginButton />
           <MobileButton isOpen={isOpen} setIsOpen={setIsOpen} />
-        </div>
+        </motion.div>
       </nav>
       <ResponsiveMenu isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
