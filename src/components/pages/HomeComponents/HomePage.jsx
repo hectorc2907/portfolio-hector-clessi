@@ -1,4 +1,4 @@
-import Hero from "../../ui/hero/Hero";
+import Hero from "./hero/Hero";
 
 const HomePage = () => {
   return (

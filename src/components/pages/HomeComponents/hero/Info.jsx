@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FadeLeft } from "../../../utils/Animations";
+import { FadeLeft } from "../../../../utils/Animations";
 
 const Info = () => {
   return (
