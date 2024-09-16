@@ -8,13 +8,11 @@ const CardProjects = () => {
   return (
     <>
       {[...MainProjects].reverse().map((project) => (
-        <Link to={`/project/` + project.id}>
+        <Link to={`/project/` + project.id} key={project.id}>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: project.delay }}
-            key={project.id}
-            onClick={() => captureData(project)}
             className="flex flex-col justify-between bg-black rounded-xl max-w-[300px] min-h-[500px] cursor-pointer hover:shadow-[0_0_15px_-1px_#ffffff] p- overflow-hidden p-4"
           >
             <div className="flex justify-between">

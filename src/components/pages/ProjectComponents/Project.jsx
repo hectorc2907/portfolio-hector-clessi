@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { MainProjects } from "../../../mocks/MainProjects";
+import { typeProjectColor } from "../../../utils/typeProjectColor";
 
 const Project = () => {
   const { id } = useParams();
@@ -11,7 +12,13 @@ const Project = () => {
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-guerrilla">
             {data.title}
           </h1>
-          <span>{data.type}</span>
+          <span
+            className={`w-28 my-4 text-center ${typeProjectColor(
+              data.type
+            )} rounded-full`}
+          >
+            {data.type}
+          </span>
         </div>
       </div>
     </>
