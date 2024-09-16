@@ -9,7 +9,7 @@ import {
 
 const FooterNetwork = () => {
   return (
-    <div div className="flex justify-center items-center text-white">
+    <div className="flex justify-center items-center text-white">
       <div className="flex flex-col items-center gap-4">
         <h5 className="text-white text-xl font-semibold">Redes Sociales:</h5>
         <div className="text-4xl grid grid-cols-3 md:grid-cols-6 gap-4">
