@@ -7,12 +7,12 @@ import FooterNetwork from "../ui/footer/FooterNetwork";
 const Footer = () => {
   return (
     <>
-      <footer className="flex justify-center bg-blue-900 pt-12 mt-12">
+      <footer className="flex justify-center bg-[#1E1E1D] pt-12 mt-12">
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="container grid grid-cols-1 md:grid-cols-3"
+          className="container flex flex-col gap-6"
         >
           <FooterLogo />
           <FooterMenu />
