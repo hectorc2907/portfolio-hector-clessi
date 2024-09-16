@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../ui/header/Logo";
 import Menu from "../ui/header/Menu";
+import LoginButton from "../ui/header/LoginButton";
 
 const Header = () => {
   return (
@@ -11,6 +12,7 @@ const Header = () => {
             <Logo />
           </Link>
           <Menu />
+          <LoginButton />
         </div>
       </nav>
     </>
