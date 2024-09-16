@@ -5,12 +5,12 @@ import { MenuOptions } from "../../../mocks/MenuOptions";
 const Menu = () => {
   return (
     <div className="hidden md:block">
-      <ul className="flex items-center gap-6 text-gray-700">
+      <ul className="flex items-center gap-6 text-white">
         {MenuOptions.map((option) => (
           <li key={option.id} className="text-xl">
             <Link
               to={option.link}
-              className="inline-block py-1 px-3 hover:text-blue-600 hover:shadow-[0_3px_0_-1px_#2563EB] font-semibold"
+              className="inline-block py-1 px-3 hover:text-slate-300 hover:shadow-[0_3px_0_-1px_#cbd5e1] font-semibold"
             >
               {option.title}
             </Link>

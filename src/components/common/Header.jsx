@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Logo from "../ui/header/Logo";
 import Menu from "../ui/header/Menu";
-import LoginButton from "../ui/header/LoginButton";
+// import LoginButton from "../ui/header/LoginButton";
 import MobileButton from "../ui/header/MobileButton";
 import ResponsiveMenu from "../ui/header/ResponsiveMenu";
 
@@ -10,7 +10,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="flex justify-center">
+      <nav className="flex justify-center bg-[#1E1E1D]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -19,7 +19,7 @@ const Header = () => {
         >
           <Logo setIsOpen={setIsOpen} />
           <Menu />
-          <LoginButton />
+          {/* <LoginButton /> */}
           <MobileButton isOpen={isOpen} setIsOpen={setIsOpen} />
         </motion.div>
       </nav>

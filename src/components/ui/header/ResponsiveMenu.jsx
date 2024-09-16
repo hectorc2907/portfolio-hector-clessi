@@ -12,7 +12,7 @@ const ResponsiveMenu = ({ isOpen, setIsOpen }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.3 }}
-            className="text-xl font-semibold uppercase bg-blue-600 text-white py-10 m-6 rounded-3xl"
+            className="text-xl font-semibold uppercase bg-[#1E1E1D] text-white py-10 m-6 rounded-3xl"
           >
             <ul className="flex flex-col items-center gap-10">
               {MenuResponsiveOptions.map((option) => (

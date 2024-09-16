@@ -1,22 +1,22 @@
 export const MenuResponsiveOptions = [
   {
     id: 0,
-    title: "About Me",
-    link: "/about",
+    title: "Home",
+    link: "/",
   },
   {
     id: 1,
-    title: "Works",
-    link: "/works",
+    title: "Sobre Mí",
+    link: "/about",
   },
   {
     id: 2,
-    title: "Contact",
-    link: "/contact",
+    title: "Proyectos",
+    link: "/works",
   },
   {
     id: 3,
-    title: "Login",
-    link: "/login",
+    title: "Contactos",
+    link: "/contact",
   },
 ];
