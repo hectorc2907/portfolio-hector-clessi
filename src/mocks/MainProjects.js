@@ -14,16 +14,22 @@ export const MainProjects = [
     delay: "0.8",
     images: [
       {
-        original: "https://isfap.com/wp-content/uploads/2022/10/test-stroop-isfap-1024x768.jpg",
-        thumbnail: "https://isfap.com/wp-content/uploads/2022/10/test-stroop-isfap-1024x768.jpg",
+        original:
+          "https://panoramashots.co.uk/wp-content/uploads/2012/07/jwhighlightandshadow1024.jpg",
+        thumbnail:
+          "https://panoramashots.co.uk/wp-content/uploads/2012/07/jwhighlightandshadow1024.jpg",
       },
       {
-        original: "https://www.usfhealthonline.com/wp-content/uploads/sites/2/2019/03/Quiz-USF-compressor-1-1024x768.jpg",
-        thumbnail: "https://www.usfhealthonline.com/wp-content/uploads/sites/2/2019/03/Quiz-USF-compressor-1-1024x768.jpg",
+        original:
+          "https://www.usfhealthonline.com/wp-content/uploads/sites/2/2019/03/Quiz-USF-compressor-1-1024x768.jpg",
+        thumbnail:
+          "https://www.usfhealthonline.com/wp-content/uploads/sites/2/2019/03/Quiz-USF-compressor-1-1024x768.jpg",
       },
       {
-        original: "https://maze.conductscience.com/wp-content/uploads/2017/10/Emergence_test_01__00000.jpg",
-        thumbnail: "https://maze.conductscience.com/wp-content/uploads/2017/10/Emergence_test_01__00000.jpg",
+        original:
+          "https://maze.conductscience.com/wp-content/uploads/2017/10/Emergence_test_01__00000.jpg",
+        thumbnail:
+          "https://maze.conductscience.com/wp-content/uploads/2017/10/Emergence_test_01__00000.jpg",
       },
     ],
   },
