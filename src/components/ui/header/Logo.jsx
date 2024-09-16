@@ -7,7 +7,7 @@ const Logo = () => {
       <div className="hidden md:flex w-56">
         <MainLogo />
       </div>
-      <div className="flex md:hidden w-11">
+      <div className="flex md:hidden w-11 ml-5">
         <SmallLogo />
       </div>
     </div>

@@ -24,7 +24,7 @@ const Options = [
   },
 ];
 
-const ResponsiveMenu = ({ isOpen }) => {
+const ResponsiveMenu = ({ isOpen, setIsOpen }) => {
   return (
     <AnimatePresence mode="wait">
       {isOpen && (
@@ -38,7 +38,7 @@ const ResponsiveMenu = ({ isOpen }) => {
           >
             <ul className="flex flex-col items-center gap-10">
               {Options.map((option) => (
-                <li key={option.id}>
+                <li key={option.id} onClick={() => setIsOpen(!isOpen)}>
                   <Link to={option.link}>{option.title}</Link>
                 </li>
               ))}

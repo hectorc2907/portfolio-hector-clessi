@@ -10,7 +10,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav>
+      <nav className="flex justify-center">
         <div className="container flex justify-between items-center py-4 md:pt-4">
           <Link to="/">
             <Logo />
@@ -20,7 +20,7 @@ const Header = () => {
           <MobileButton isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </nav>
-      <ResponsiveMenu isOpen={isOpen} />
+      <ResponsiveMenu isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };
