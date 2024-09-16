@@ -1,5 +1,5 @@
 import Hero from "./hero/Hero";
-import Works from "./works/Works";
+import SkillsBar from "./skills/SkillsBar";
 
 const HomePage = () => {
   return (
@@ -8,7 +8,7 @@ const HomePage = () => {
         <div className="container">
           <Hero />
         </div>
-        <Works />
+        <SkillsBar />
       </div>
     </>
   );

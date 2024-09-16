@@ -1,7 +1,7 @@
 import Skills from "../../../ui/skills/Skills";
 import { motion } from "framer-motion";
 
-const Works = () => {
+const SkillsBar = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -24,4 +24,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default SkillsBar;
