@@ -50,8 +50,10 @@ const Project = () => {
                   Tecnologías
                 </h2>
                 <div className="flex justify-center gap-10">
-                  {data.technologies.map((technology) => (
-                    <div className="text-4xl">{techIcons(technology)}</div>
+                  {data.technologies.map((technology, index) => (
+                    <div key={index} className="text-4xl">
+                      {techIcons(technology)}
+                    </div>
                   ))}
                 </div>
               </div>

@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import HomePage from "../components/pages/HomeComponents/HomePage";
 import LoginPage from "../components/pages/LoginComponents/LoginPage";
 import AboutMePage from "../components/pages/AboutComponents/AboutMePage";
@@ -8,6 +9,11 @@ import Error404 from "../components/pages/Error404Components/Error404";
 import Project from "../components/pages/ProjectComponents/Project";
 
 const PublicRoutes = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <Routes>
       <Route path="/" exact element={<HomePage />} />
