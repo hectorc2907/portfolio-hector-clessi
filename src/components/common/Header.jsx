@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../ui/header/Logo";
 import Menu from "../ui/header/Menu";
 import LoginButton from "../ui/header/LoginButton";
+import MobileButton from "../ui/header/MobileButton";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <nav>
@@ -13,6 +16,7 @@ const Header = () => {
           </Link>
           <Menu />
           <LoginButton />
+          <MobileButton isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </nav>
     </>
