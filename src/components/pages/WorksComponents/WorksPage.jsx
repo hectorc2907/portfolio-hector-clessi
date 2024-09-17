@@ -3,6 +3,7 @@ import CardProjectsAll from "./CardProjectsAll";
 import { useState } from "react";
 import LinkButton from "../../ui/LinkButton";
 import RedirectButton from "../../ui/RedirectButton";
+import SkillsBar from "../../ui/skills/SkillsBar";
 
 const WorksPage = () => {
   const [filterText, setFilterText] = useState("");
@@ -12,8 +13,8 @@ const WorksPage = () => {
   };
   return (
     <>
-      <div className="flex text-white flex-col items-center">
-        <div className="container grid grid-cols-1 gap-10">
+      <div className="flex text-white flex-col items-center gap-10">
+        <div className="container grid grid-cols-1 gap-5">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -75,6 +76,7 @@ const WorksPage = () => {
             </motion.div>
           </div>
         </div>
+        <SkillsBar />
       </div>
     </>
   );
