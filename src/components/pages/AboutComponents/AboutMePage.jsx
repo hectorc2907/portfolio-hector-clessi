@@ -1,4 +1,5 @@
 import FirstSection from "./card/FirstSection";
+import SecondSection from "./card/SecondSection";
 
 const AboutMePage = () => {
   return (
@@ -8,8 +9,9 @@ const AboutMePage = () => {
           <h1 className="text-center text-white font-roboto text-5xl pt-10">
             ¿Quien Soy?
           </h1>
-          <div>
+          <div className="flex flex-col gap-10">
             <FirstSection />
+            <SecondSection />
           </div>
         </div>
       </div>
