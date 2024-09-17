@@ -12,15 +12,15 @@ import { GrMysql } from "react-icons/gr";
 
 const InfoTech = () => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-3 gap-20 py-10 px-5 xl:px-0">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-20 py-10 px-5 xl:px-0">
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.6 }}
-        className="bg-[#161513] rounded-2xl cursor-pointer hover:shadow-[0_0_15px_-1px_#ffffff] h-[400px]"
+        className="bg-[#161513] rounded-2xl cursor-pointer hover:shadow-[0_0_15px_-1px_#ffffff] min-h-[400px]"
       >
         <Link to="/works">
-          <div className="flex flex-col justify-between h-full p-4">
+          <div className="flex flex-col justify-between h-full p-4 gap-5">
             <h3 className="text-center font-guerrilla py-3">Front-End</h3>
             <p className="text-center mt-[-20px]">
               Soy desarrollador especializado en front-end, utilizando
@@ -45,10 +45,10 @@ const InfoTech = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="bg-[#161513] rounded-2xl cursor-pointer hover:shadow-[0_0_15px_-1px_#ffffff] h-[400px]"
+        className="bg-[#161513] rounded-2xl cursor-pointer hover:shadow-[0_0_15px_-1px_#ffffff] min-h-[400px]"
       >
         <Link to="/works">
-          <div className="flex flex-col justify-between h-full p-4">
+          <div className="flex flex-col justify-between h-full p-4 gap-5">
             <h3 className="text-center font-guerrilla py-3">Back-End</h3>
             <p className="text-center mt-[-20px]">
               En el ámbito del back-end, desarrollo soluciones robustas
@@ -71,10 +71,10 @@ const InfoTech = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 1.0 }}
-        className="bg-[#161513] rounded-2xl cursor-pointer hover:shadow-[0_0_15px_-1px_#ffffff] h-[400px]"
+        className="bg-[#161513] rounded-2xl cursor-pointer hover:shadow-[0_0_15px_-1px_#ffffff] min-h-[400px]"
       >
         <Link to="/works">
-          <div className="flex flex-col justify-between h-full p-4">
+          <div className="flex flex-col justify-between h-full p-4 gap-5">
             <h3 className="text-center font-guerrilla py-3">DataBase</h3>
             <p className="text-center mt-[-20px]">
               En cuanto a bases de datos, tengo experiencia trabajando tanto con
