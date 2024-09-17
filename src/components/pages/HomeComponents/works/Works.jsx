@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Projects from "./Projects";
-import ButtonMoreProjects from "./ButtonMoreProjects";
+import LinkButton from "../../../ui/LinkButton";
 
 const Works = () => {
   return (
@@ -15,7 +15,7 @@ const Works = () => {
           Proyectos
         </motion.h2>
         <Projects />
-        <ButtonMoreProjects />
+        <LinkButton direct="/works" text="Sección Proyectos!" />
       </div>
     </div>
   );
