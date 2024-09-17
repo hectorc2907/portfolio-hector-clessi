@@ -1,5 +1,6 @@
 import FirstSection from "./card/FirstSection";
 import SecondSection from "./card/SecondSection";
+import ThirdSection from "./card/ThirdSection";
 
 const AboutMePage = () => {
   return (
@@ -12,6 +13,7 @@ const AboutMePage = () => {
           <div className="flex flex-col gap-10">
             <FirstSection />
             <SecondSection />
+            <ThirdSection />
           </div>
         </div>
       </div>
