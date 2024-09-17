@@ -1,7 +1,8 @@
-import Skills from "../../../ui/skills/Skills";
 import { motion } from "framer-motion";
+import InfoTech from "./InfoTech";
+import LinkButton from "../../../ui/LinkButton";
 
-const SkillsBar = () => {
+const Banner = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -16,12 +17,13 @@ const SkillsBar = () => {
           transition={{ duration: 1.5, delay: 0.4 }}
           className="text-center text-4xl italic font-guerrilla"
         >
-          Habilidades
+          Soluciones
         </motion.h2>
-        <Skills />
+        <InfoTech />
+        <LinkButton direct="/works" text="Mirar Habilidades!" />
       </div>
     </motion.section>
   );
 };
 
-export default SkillsBar;
+export default Banner;
