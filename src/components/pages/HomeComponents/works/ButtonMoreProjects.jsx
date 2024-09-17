@@ -5,7 +5,7 @@ const ButtonMoreProjects = () => {
   return (
     <div className="flex justify-center">
       <Link to="/works" className="link-btn">
-        Mas Proyectos!
+        Seccion Proyectos!
       </Link>
     </div>
   );
