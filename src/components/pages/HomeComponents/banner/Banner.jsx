@@ -20,7 +20,13 @@ const Banner = () => {
           Soluciones
         </motion.h2>
         <InfoTech />
-        <LinkButton direct="/works" text="Mirar Habilidades!" />
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5, delay: 1.2 }}
+        >
+          <LinkButton direct="/works" text="Mira Mis Habilidades!" />
+        </motion.div>
       </div>
     </motion.section>
   );

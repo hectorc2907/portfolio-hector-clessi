@@ -44,7 +44,7 @@ const InfoTech = () => {
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.6 }}
+        transition={{ duration: 1, delay: 0.8 }}
         className="bg-[#161513] rounded-2xl cursor-pointer hover:shadow-[0_0_15px_-1px_#ffffff] h-[400px]"
       >
         <Link to="/works">
@@ -70,7 +70,7 @@ const InfoTech = () => {
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.6 }}
+        transition={{ duration: 1, delay: 1.0 }}
         className="bg-[#161513] rounded-2xl cursor-pointer hover:shadow-[0_0_15px_-1px_#ffffff] h-[400px]"
       >
         <Link to="/works">
