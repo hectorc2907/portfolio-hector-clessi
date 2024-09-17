@@ -2,10 +2,12 @@ import { motion } from "framer-motion";
 import FirstSection from "./card/FirstSection";
 import SecondSection from "./card/SecondSection";
 import ThirdSection from "./card/ThirdSection";
+import Meta from "../../ui/Meta";
 
 const AboutMePage = () => {
   return (
     <>
+      <Meta title="Sobre Mí" />
       <div className="flex flex-col items-center">
         <div className="container grid grid-cols-1 gap-10 md:px-5 xl:px-0">
           <motion.h1

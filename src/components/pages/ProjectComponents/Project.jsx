@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { AllProjects } from "../../../mocks/AllProjects";
+import Meta from "../../ui/Meta";
 
 const Project = () => {
   const { id } = useParams();
@@ -14,6 +15,7 @@ const Project = () => {
     AllProjects.find((project) => project.id.toString() === id);
   return (
     <>
+      <Meta title={data.title} />
       <div className="text-white py-16">
         <motion.div
           initial={{ opacity: 0, y: -50 }}

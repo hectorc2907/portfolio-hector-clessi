@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import CardProjectsAll from "./CardProjectsAll";
 import { useState } from "react";
-import LinkButton from "../../ui/LinkButton";
 import RedirectButton from "../../ui/RedirectButton";
 import SkillsBar from "../../ui/skills/SkillsBar";
+import Meta from "../../ui/Meta";
 
 const WorksPage = () => {
   const [filterText, setFilterText] = useState("");
@@ -13,6 +13,7 @@ const WorksPage = () => {
   };
   return (
     <>
+      <Meta title="Proyectos" />
       <div className="flex text-white flex-col items-center gap-10">
         <div className="container grid grid-cols-1 gap-5">
           <motion.h1
@@ -29,7 +30,7 @@ const WorksPage = () => {
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="text-3xl italic font-guerrilla"
+                className="text-4xl italic font-guerrilla"
               >
                 Proyectos
               </motion.h2>

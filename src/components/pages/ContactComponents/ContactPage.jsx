@@ -1,7 +1,11 @@
+import Meta from "../../ui/Meta";
+
 const ContactPage = () => {
   return (
-    <div>ContactPage</div>
-  )
-}
+    <>
+      <Meta title="Contactos" />
+    </>
+  );
+};
 
-export default ContactPage
+export default ContactPage;
