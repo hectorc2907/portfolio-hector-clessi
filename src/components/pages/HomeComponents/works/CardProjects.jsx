@@ -26,10 +26,10 @@ const CardProjects = () => {
               <p className="text-xl font-bold">{project.title}</p>
               <p
                 className={`w-28 text-center ${typeProjectColor(
-                  project.type
+                  project.projectProfile
                 )} rounded-full`}
               >
-                {project.type}
+                {project.projectProfile}
               </p>
               <p
                 className="text-sm text-center overflow-hidden"
@@ -41,6 +41,9 @@ const CardProjects = () => {
               >
                 {project.description} ...
               </p>
+            </div>
+            <div className="mt-[-16px]">
+              <p className="text-center">Tipo: {project.type}</p>
             </div>
             <div className="flex justify-evenly pb-2">
               {project.technologies.map((technology, index) => (
