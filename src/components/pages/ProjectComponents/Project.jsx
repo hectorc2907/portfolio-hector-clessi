@@ -5,10 +5,13 @@ import { typeProjectColor } from "../../../utils/typeProjectColor";
 import { motion } from "framer-motion";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import { AllProjects } from "../../../mocks/AllProjects";
 
 const Project = () => {
   const { id } = useParams();
-  const data = MainProjects.find((project) => project.id.toString() === id);
+  const data =
+    MainProjects.find((project) => project.id.toString() === id) ||
+    AllProjects.find((project) => project.id.toString() === id);
   return (
     <>
       <div className="text-white py-16">
