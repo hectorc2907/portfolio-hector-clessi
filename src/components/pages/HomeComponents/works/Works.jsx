@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Projects from "./Projects";
+import ButtonMoreProjects from "./ButtonMoreProjects";
 
 const Works = () => {
   return (
@@ -14,6 +15,7 @@ const Works = () => {
           Proyectos
         </motion.h2>
         <Projects />
+        <ButtonMoreProjects />
       </div>
     </div>
   );
