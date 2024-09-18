@@ -88,7 +88,7 @@ const WorksPage = () => {
           >
             Experiencia Profesional
           </motion.h2>
-          <div>
+          <div className="px-5">
             <CardExperience />
           </div>
         </div>
