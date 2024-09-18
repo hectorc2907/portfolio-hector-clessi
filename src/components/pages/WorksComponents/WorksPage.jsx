@@ -4,6 +4,7 @@ import { useState } from "react";
 import RedirectButton from "../../ui/RedirectButton";
 import SkillsBar from "../../ui/skills/SkillsBar";
 import Meta from "../../ui/Meta";
+import CardExperience from "./CardExperience";
 
 const WorksPage = () => {
   const [filterText, setFilterText] = useState("");
@@ -60,8 +61,8 @@ const WorksPage = () => {
                 transition={{ duration: 1, delay: 1.5 }}
                 className="text-center"
               >
-                *Por motivos de rendimiento solo se muestran 8 proyectos maximo,
-                puedes buscar por tecnologias o mirar mi{" "}
+                *Por motivos de rendimiento solo se muestran los ultimos 4
+                proyectos, puedes buscar por tecnologias o mirar mi{" "}
                 <span className="font-bold">GitHub</span>
               </motion.p>
               <motion.div
@@ -78,6 +79,19 @@ const WorksPage = () => {
           </div>
         </div>
         <SkillsBar />
+        <div className="container grid grid-cols-1 gap-5">
+          <motion.h2
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="text-center font-guerrilla text-4xl italic py-3"
+          >
+            Experiencia Profesional
+          </motion.h2>
+          <div>
+            <CardExperience />
+          </div>
+        </div>
       </div>
     </>
   );

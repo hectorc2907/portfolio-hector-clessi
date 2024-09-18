@@ -17,8 +17,7 @@ const CardProjectsAll = ({ filterText }) => {
     return matchTechnologies || matchProfile;
   });
 
-  // Limitar el número de proyectos mostrados
-  const displayedProjects = filteredProjects.reverse().slice(0, 8);
+  const displayedProjects = filteredProjects.reverse().slice(0, 4);
 
   return (
     <>
