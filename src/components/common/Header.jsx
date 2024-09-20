@@ -2,8 +2,16 @@ import { motion } from "framer-motion";
 import Logo from "../../assets/images/logo.png";
 import LogoSmall from "../../assets/images/logoSmall.png";
 import { Menu } from "../../mocks/Menu";
+import { FaArrowUpFromBracket } from "react-icons/fa6";
+import { useState } from "react";
 
 const Header = () => {
+  const [buttonMenuResponsive, setButtonMenuResponsive] = useState(false);
+
+  const buttonMenuActivate = () => {
+    setButtonMenuResponsive(!buttonMenuResponsive);
+  };
+  console.log(buttonMenuResponsive);
   return (
     <>
       <motion.nav
@@ -35,10 +43,23 @@ const Header = () => {
             className="text-white hidden lg:flex gap-10"
           >
             {Menu.map((option) => (
-              <a key={option.id} href={option.link} className="text-xl font-semibold hover:text-slate-200">
+              <a
+                key={option.id}
+                href={option.link}
+                className="text-xl font-semibold hover:text-slate-200"
+              >
                 {option.title}
               </a>
             ))}
+          </motion.div>
+          {/* Mobile Button */}
+          <motion.div
+            initial={{ rotate: 180 }}
+            animate={{ rotate: buttonMenuResponsive ? 0 : -540 }}
+            transition={{ duration: 0.5 }}
+            className="lg:hidden text-white text-3xl font-semibold"
+          >
+            <FaArrowUpFromBracket onClick={() => buttonMenuActivate()} />
           </motion.div>
         </div>
       </motion.nav>
