@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { getActualYear } from "../../utils/dateUtils";
+import { getActualYear } from "../../../utils/dateUtils";
 
 const FooterCopyright = () => {
   return (

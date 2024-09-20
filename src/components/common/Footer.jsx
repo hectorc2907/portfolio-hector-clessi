@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import FooterLogo from "../ui/FooterLogo";
-import FooterMenu from "../ui/FooterMenu";
-import FooterSocialMedia from "../ui/FooterSocialMedia";
-import FooterCopyright from "../ui/FooterCopyright";
+import FooterLogo from "../ui/Footer/FooterLogo";
+import FooterMenu from "../ui/Footer/FooterMenu";
+import FooterSocialMedia from "../ui/Footer/FooterSocialMedia";
+import FooterCopyright from "../ui/Footer/FooterCopyright";
 
 const Footer = () => {
   return (

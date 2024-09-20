@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { SocialMediaLinks } from "../../utils/SocialMediaLinks";
+import { SocialMediaLinks } from "../../../utils/SocialMediaLinks";
 
 const FooterSocialMedia = () => {
   return (

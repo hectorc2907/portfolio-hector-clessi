@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Menu } from "../../mocks/Menu";
+import { Menu } from "../../../mocks/Menu";
 
 const FooterMenu = () => {
   return (
