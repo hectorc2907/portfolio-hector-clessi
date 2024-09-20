@@ -1,5 +1,6 @@
 import { TechIcons } from "../../../../utils/techIcons";
 import { motion } from "framer-motion";
+import SkillsTitle from "./SkillsTitle";
 
 const Skills = () => {
   return (
@@ -12,21 +13,15 @@ const Skills = () => {
       >
         <div className="container grid grid-cols-1 gap-10">
           {/* Skills Title */}
-          <motion.h2
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="text-4xl italic font-semibold text-center"
-          >
-            Habilidades
-          </motion.h2>
+          <SkillsTitle />
           {/* Skills Box */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-black">
             <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900">
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.7 }}
+              className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900"
+            >
               <h3 className="py-3 text-center text-2xl font-semibold italic font-guerrilla">
                 Front-End
               </h3>
@@ -43,10 +38,11 @@ const Skills = () => {
               </p>
             </motion.div>
             <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.9 }}
-            className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900">
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.9 }}
+              className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900"
+            >
               <h3 className="py-3 text-center text-2xl font-semibold italic font-guerrilla">
                 Back-End
               </h3>
@@ -62,10 +58,11 @@ const Skills = () => {
               </p>
             </motion.div>
             <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.1 }}
-            className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900">
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1.1 }}
+              className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900"
+            >
               <h3 className="py-3 text-center text-2xl font-semibold italic font-guerrilla">
                 Base de Datos
               </h3>
@@ -83,10 +80,11 @@ const Skills = () => {
           </div>
           {/* Skills Technologies */}
           <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.3 }}
-          className="bg-white p-5 text-black rounded-2xl shadow-md shadow-slate-900">
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.3 }}
+            className="bg-white p-5 text-black rounded-2xl shadow-md shadow-slate-900"
+          >
             <h3 className="text-center text-2xl font-semibold italic font-guerrilla">
               Tecnologías
             </h3>
