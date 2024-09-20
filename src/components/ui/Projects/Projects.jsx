@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { MyProjects } from "../../../mocks/MyProjects";
 import { TechIcons } from "../../../utils/techIcons";
+import ProjectsSection from "./ProjectsSection";
 
 const Projects = () => {
   return (
@@ -17,50 +17,7 @@ const Projects = () => {
             Proyectos
           </motion.h2>
           {/* Project Section */}
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"
-          >
-            {/* All Projects Scan */}
-            {MyProjects.map((projects,index) => (
-              <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.5 + 0.2 * index }}
-              className="bg-white flex flex-col border rounded-2xl shadow-md">
-                {/* Project Image */}
-                <img src={projects.img} alt="" className="rounded-t-2xl" />
-                <div className="flex-grow text-center">
-                  {/* Project Title */}
-                  <div className="text-4xl font-semibold italic font-guerrilla pt-3">
-                    {projects.title}
-                  </div>
-                  {/* Project Type */}
-                  <div className="text-lg font-semibold">{projects.type}</div>
-                  {/* Project Description */}
-                  <div className="px-10 py-5">{projects.description}</div>
-                  {/* Project Technologies */}
-                  <div className="flex justify-center pb-5 gap-5">
-                    {projects.technologies.map((tech) => (
-                      <div className="text-2xl">{TechIcons(`${tech}`)}</div>
-                    ))}
-                  </div>
-                </div>
-                {/* Project Buttons */}
-                <div className="grid grid-cols-2">
-                  <a href={projects.repository} target="_blank">
-                    <div className="flex justify-center border rounded-bl-2xl hover:bg-slate-100">
-                      <div className="py-3 text-center">Repositorio GH</div>
-                    </div>
-                  </a>
-                  <a href={projects.preview} target="_blank">
-                    <div className="flex justify-center border rounded-br-2xl hover:bg-slate-100">
-                      <div className="py-3 text-center">Preview</div>
-                    </div>
-                  </a>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          <ProjectsSection />
           {/* Project Button More Projects */}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
