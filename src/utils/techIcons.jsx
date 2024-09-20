@@ -1,6 +1,7 @@
 import {
   SiHtml5,
   SiCss3,
+  SiGithub,
   SiJavascript,
   SiTypescript,
   SiReact,
@@ -12,12 +13,14 @@ import {
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
-export const techIcons = (technology) => {
+export const TechIcons = (technology) => {
   switch (technology.toLowerCase()) {
     case "html":
       return <SiHtml5 />;
     case "css":
       return <SiCss3 />;
+    case "github":
+      return <SiGithub />;
     case "javascript":
       return <SiJavascript />;
     case "typescript":
@@ -32,11 +35,10 @@ export const techIcons = (technology) => {
       return <SiNodedotjs />;
     case "express":
       return <SiExpress />;
-    case "mongo":
+    case "mongodb":
       return <SiMongodb />;
     case "mysql":
       return <GrMysql />;
-
     default:
       break;
   }
