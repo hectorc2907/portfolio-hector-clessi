@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu } from "../../mocks/Menu";
+import { Menu } from "../../../mocks/Menu";
 
-const NavbarMenuResponsive = ({ menuResponsiveActive }) => {
+const HeaderMenuResponsive = ({ menuResponsiveActive }) => {
   return (
     <AnimatePresence mode="wait">
       {menuResponsiveActive && (
@@ -36,4 +36,4 @@ const NavbarMenuResponsive = ({ menuResponsiveActive }) => {
   );
 };
 
-export default NavbarMenuResponsive;
+export default HeaderMenuResponsive;

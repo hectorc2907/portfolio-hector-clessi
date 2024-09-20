@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Menu } from "../../mocks/Menu";
+import { Menu } from "../../../mocks/Menu";
 
-const NavbarMenu = () => {
+const HeaderMenu = () => {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
@@ -22,4 +22,4 @@ const NavbarMenu = () => {
   );
 };
 
-export default NavbarMenu;
+export default HeaderMenu;

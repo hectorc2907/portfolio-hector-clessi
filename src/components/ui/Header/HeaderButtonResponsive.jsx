@@ -1,7 +1,7 @@
 import { FaArrowUpFromBracket } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
-const NavbarButtonResponsive = ({
+const HeaderButtonResponsive = ({
   menuResponsiveActive,
   buttonMenuActivate,
 }) => {
@@ -24,4 +24,4 @@ const NavbarButtonResponsive = ({
   );
 };
 
-export default NavbarButtonResponsive;
+export default HeaderButtonResponsive;

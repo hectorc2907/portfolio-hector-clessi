@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import Logo from "../../assets/images/logo.png";
-import LogoSmall from "../../assets/images/logoSmall.png";
+import Logo from "../../../assets/images/logo.png";
+import LogoSmall from "../../../assets/images/logoSmall.png";
 
-const NavbarLogo = () => {
+const HeaderLogo = () => {
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}
@@ -19,4 +19,4 @@ const NavbarLogo = () => {
   );
 };
 
-export default NavbarLogo;
+export default HeaderLogo;

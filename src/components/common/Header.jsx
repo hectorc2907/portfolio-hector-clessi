@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import NavbarLogo from "../ui/NavbarLogo";
-import NavbarButton from "../ui/NavbarButton";
-import NavbarMenuResponsive from "../ui/NavbarMenuResponsive";
+import HeaderLogo from "../ui/Header/HeaderLogo";
+import HeaderButton from "../ui/Header/HeaderButton";
+import HeaderMenuResponsive from "../ui/Header/HeaderMenuResponsive";
 
 const Header = () => {
   const [menuResponsiveActive, setMenuResponsiveActive] = useState(false);
@@ -19,14 +19,14 @@ const Header = () => {
         className="bg-blue-900 p-5 flex justify-center shadow-2xl shadow-slate-400"
       >
         <div className="container flex justify-between items-center">
-          <NavbarLogo />
-          <NavbarButton
+          <HeaderLogo />
+          <HeaderButton
             menuResponsiveActive={menuResponsiveActive}
             buttonMenuActivate={buttonMenuActivate}
           />
         </div>
       </motion.nav>
-      <NavbarMenuResponsive menuResponsiveActive={menuResponsiveActive} />
+      <HeaderMenuResponsive menuResponsiveActive={menuResponsiveActive} />
     </>
   );
 };
