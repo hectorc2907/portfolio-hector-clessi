@@ -17,15 +17,20 @@ const Footer = () => {
           {/* Footer Nav Section */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 py-5">
             {/* Footer Logo */}
-            <motion.a
+            <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              href="/"
               className="flex items-center"
             >
-              <img src={Logo} alt="Main Logo of HAC Service" className="w-64" />
-            </motion.a>
+              <a href="/">
+                <img
+                  src={Logo}
+                  alt="Main Logo of HAC Service"
+                  className="w-64"
+                />
+              </a>
+            </motion.div>
             {/* Footer Menu */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
