@@ -1,17 +1,32 @@
 import { TechIcons } from "../../../../utils/techIcons";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
     <>
-      <section className="bg-blue-900 text-white px-5 py-10 flex justify-center">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="bg-blue-900 text-white px-5 py-10 flex justify-center"
+      >
         <div className="container grid grid-cols-1 gap-10">
           {/* Skills Title */}
-          <h2 className="text-4xl italic font-semibold text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="text-4xl italic font-semibold text-center"
+          >
             Habilidades
-          </h2>
+          </motion.h2>
           {/* Skills Box */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-black">
-            <div className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900">
+            <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900">
               <h3 className="py-3 text-center text-2xl font-semibold italic font-guerrilla">
                 Front-End
               </h3>
@@ -26,8 +41,12 @@ const Skills = () => {
                 en interfaces funcionales, centrándome en la accesibilidad y la
                 interacción intuitiva.
               </p>
-            </div>
-            <div className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900">
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.9 }}
+            className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900">
               <h3 className="py-3 text-center text-2xl font-semibold italic font-guerrilla">
                 Back-End
               </h3>
@@ -41,8 +60,12 @@ const Skills = () => {
                 Mi prioridad es garantizar que los sistemas sean eficientes,
                 bien estructurados y fáciles de mantener.
               </p>
-            </div>
-            <div className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900">
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.1 }}
+            className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900">
               <h3 className="py-3 text-center text-2xl font-semibold italic font-guerrilla">
                 Base de Datos
               </h3>
@@ -56,14 +79,18 @@ const Skills = () => {
                 organizados de manera óptima para soportar aplicaciones tanto en
                 entornos pequeños como en proyectos a gran escala.
               </p>
-            </div>
+            </motion.div>
           </div>
           {/* Skills Technologies */}
-          <div className="bg-white p-5 text-black rounded-2xl shadow-md shadow-slate-900">
+          <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.3 }}
+          className="bg-white p-5 text-black rounded-2xl shadow-md shadow-slate-900">
             <h3 className="text-center text-2xl font-semibold italic font-guerrilla">
               Tecnologías
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 py-5 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 py-5 gap-10">
               <div className="flex flex-col items-center gap-5">
                 <h4 className="text-center text-2xl font-semibold">Basicas</h4>
                 <div className="flex gap-10 text-5xl">
@@ -92,18 +119,14 @@ const Skills = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-5">
-                <h4 className="text-center text-2xl font-semibold">
-                  Back-End
-                </h4>
+                <h4 className="text-center text-2xl font-semibold">Back-End</h4>
                 <div className="flex gap-10 text-5xl">
                   <p className="text-[#8EC608]">{TechIcons("Node")}</p>
                   <p>{TechIcons("Express")}</p>
                 </div>
               </div>
               <div className="flex flex-col items-center gap-5">
-                <h4 className="text-center text-2xl font-semibold">
-                  Moviles
-                </h4>
+                <h4 className="text-center text-2xl font-semibold">Moviles</h4>
                 <div className="flex gap-10 text-5xl">
                   <p className="text-[#1BA1CC]">{TechIcons("React")}</p>
                 </div>
@@ -118,9 +141,9 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
