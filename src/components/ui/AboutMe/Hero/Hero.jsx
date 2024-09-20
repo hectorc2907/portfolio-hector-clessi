@@ -2,6 +2,7 @@ import ImageProfile from "../../../../assets/images/profile.jpg";
 import { motion } from "framer-motion";
 import HeroTitle from "./HeroTitle";
 import HeroDescription from "./HeroDescription";
+import HeroButtonCV from "./HeroButtonCV";
 
 const Hero = () => {
   return (
@@ -16,18 +17,7 @@ const Hero = () => {
               {/* Hero Description */}
               <HeroDescription />
               {/* Hero Button CV */}
-              <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 1.3 }}
-                className="flex justify-center mt-4"
-              >
-                <a href="">
-                  <div className="w-[250px] py-3 text-center border shadow-sm hover:shadow-md hover:shadow-slate-300">
-                    Ver Curriculum Vitae
-                  </div>
-                </a>
-              </motion.div>
+              <HeroButtonCV />
             </div>
           </div>
           {/* Hero Image */}
