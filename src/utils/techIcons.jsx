@@ -16,29 +16,29 @@ import { GrMysql } from "react-icons/gr";
 export const TechIcons = (technology) => {
   switch (technology.toLowerCase()) {
     case "html":
-      return <SiHtml5 />;
+      return <SiHtml5 className="text-[#E4552E]" />;
     case "css":
-      return <SiCss3 />;
+      return <SiCss3 className="text-[#2D53E5]" />;
     case "github":
       return <SiGithub />;
     case "javascript":
-      return <SiJavascript />;
+      return <SiJavascript className="text-[#EBCC37]" />;
     case "typescript":
-      return <SiTypescript />;
+      return <SiTypescript className="text-[#377CC8]" />;
     case "react":
-      return <SiReact />;
+      return <SiReact className="text-[#1BA1CC]" />;
     case "bootstrap":
-      return <SiBootstrap />;
+      return <SiBootstrap className="text-[#8819FD]" />;
     case "tailwind":
-      return <SiTailwindcss />;
+      return <SiTailwindcss className="text-[#3EBFF8]" />;
     case "node":
-      return <SiNodedotjs />;
+      return <SiNodedotjs className="text-[#8EC608]" />;
     case "express":
       return <SiExpress />;
     case "mongodb":
-      return <SiMongodb />;
+      return <SiMongodb className="text-[#17AD55]" />;
     case "mysql":
-      return <GrMysql />;
+      return <GrMysql className="text-[#08668F]" />;
     default:
       break;
   }
