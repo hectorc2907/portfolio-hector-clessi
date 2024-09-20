@@ -8,14 +8,25 @@ const Projects = () => {
       <section className="px-5 py-10 flex justify-center">
         <div className="container grid grid-cols-1 gap-10">
           {/* Projects Main Section Title */}
-          <h2 className="text-4xl italic font-semibold text-center">
+          <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="text-4xl italic font-semibold text-center"
+          >
             Proyectos
-          </h2>
+          </motion.h2>
           {/* Project Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"
+          >
             {/* All Projects Scan */}
-            {MyProjects.map((projects) => (
-              <div className="bg-white flex flex-col border rounded-2xl shadow-md">
+            {MyProjects.map((projects,index) => (
+              <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 + 0.2 * index }}
+              className="bg-white flex flex-col border rounded-2xl shadow-md">
                 {/* Project Image */}
                 <img src={projects.img} alt="" className="rounded-t-2xl" />
                 <div className="flex-grow text-center">
@@ -47,7 +58,7 @@ const Projects = () => {
                     </div>
                   </a>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           {/* Project Button More Projects */}
