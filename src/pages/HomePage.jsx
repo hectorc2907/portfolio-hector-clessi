@@ -1,7 +1,11 @@
+import AboutMe from "../components/ui/AboutMe/AboutMe";
+
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <>
+      <AboutMe />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
