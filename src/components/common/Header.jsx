@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import NavbarLogo from "../ui/NavbarLogo";
-import NavbarMenu from "../ui/NavbarMenu";
+import NavbarButton from "../ui/NavbarButton";
 import NavbarMenuResponsive from "../ui/NavbarMenuResponsive";
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
       >
         <div className="container flex justify-between items-center">
           <NavbarLogo />
-          <NavbarMenu
+          <NavbarButton
             menuResponsiveActive={menuResponsiveActive}
             buttonMenuActivate={buttonMenuActivate}
           />
