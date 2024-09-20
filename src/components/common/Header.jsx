@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <>
-      <motion.nav
+      <motion.header
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -25,7 +25,7 @@ const Header = () => {
             buttonMenuActivate={buttonMenuActivate}
           />
         </div>
-      </motion.nav>
+      </motion.header>
       <HeaderMenuResponsive menuResponsiveActive={menuResponsiveActive} />
     </>
   );
