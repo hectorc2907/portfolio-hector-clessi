@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { TechIcons } from "../../../utils/techIcons";
+import ProjectsTitle from "./ProjectsTitle";
 import ProjectsSection from "./ProjectsSection";
 
 const Projects = () => {
@@ -8,14 +9,7 @@ const Projects = () => {
       <section className="px-5 py-10 flex justify-center">
         <div className="container grid grid-cols-1 gap-10">
           {/* Projects Main Section Title */}
-          <motion.h2
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="text-4xl italic font-semibold text-center"
-          >
-            Proyectos
-          </motion.h2>
+          <ProjectsTitle />
           {/* Project Section */}
           <ProjectsSection />
           {/* Project Button More Projects */}
