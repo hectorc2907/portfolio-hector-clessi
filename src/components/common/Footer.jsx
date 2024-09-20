@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import Logo from "../../assets/images/logo.png";
 import { Menu } from "../../mocks/Menu";
-import { SocialMediaLinks } from "../../utils/SocialMediaLinks";
 import FooterCopyright from "../ui/FooterCopyright";
+import FooterSocialMedia from "../ui/FooterSocialMedia";
 
 const Footer = () => {
   return (
@@ -52,34 +52,7 @@ const Footer = () => {
               </div>
             </motion.div>
             {/* Footer Social Networks */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              className="flex flex-col items-center gap-5"
-            >
-              <h5 className="text-lg font-semibold">Redes Sociales:</h5>
-              <div className="grid grid-cols-3 lg:grid-cols-6 gap-2 text-3xl">
-                <p className="hover:text-slate-300">
-                  {SocialMediaLinks("LinkedIn")}
-                </p>
-                <p className="hover:text-slate-300">
-                  {SocialMediaLinks("Facebook")}
-                </p>
-                <p className="hover:text-slate-300">
-                  {SocialMediaLinks("Instagram")}
-                </p>
-                <p className="hover:text-slate-300">
-                  {SocialMediaLinks("Twitter")}
-                </p>
-                <p className="hover:text-slate-300">
-                  {SocialMediaLinks("WhatsApp")}
-                </p>
-                <p className="hover:text-slate-300">
-                  {SocialMediaLinks("Telegram")}
-                </p>
-              </div>
-            </motion.div>
+            <FooterSocialMedia />
           </div>
           {/* Copyright Section */}
           <FooterCopyright />
