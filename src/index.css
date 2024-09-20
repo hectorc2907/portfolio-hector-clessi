@@ -11,6 +11,6 @@
     @apply bg-blue-600 text-white font-semibold py-3 px-6 rounded-xl shadow-md hover:!scale-110 duration-300;
   }
   .link-btn {
-    @apply border hover:shadow-md hover:shadow-white px-5 py-3 text-white font-roboto text-2xl cursor-pointer;
+    @apply border hover:shadow-md hover:shadow-black px-5 py-3 text-black font-roboto text-2xl cursor-pointer;
   }
 }

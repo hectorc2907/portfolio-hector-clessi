@@ -10,7 +10,7 @@ const Hero = () => {
           {/* Hero Info */}
           <div className="flex justify-center lg:justify-start items-center order-2 lg:order-1">
             {/* Hero Title */}
-            <div className="text-center lg:text-left">
+            <div className="text-center">
               <div className="text-4xl font-semibold">
                 <motion.p
                   initial={{ opacity: 0, x: -100 }}
@@ -39,7 +39,7 @@ const Hero = () => {
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 1.1 }}
-                className="text-xl text-slate-700 mt-4"
+                className="text-xl text-center text-slate-700 mt-4"
               >
                 <p>
                   Con {calculateAge("2023-08-14")}{" "}
@@ -55,6 +55,18 @@ const Hero = () => {
                 </p>
               </motion.div>
               {/* Hero Button CV */}
+              <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 1.3 }}
+                className="flex justify-center mt-4"
+              >
+                <a href="">
+                  <div className="w-[250px] py-3 text-center border shadow-sm hover:shadow-md hover:shadow-slate-300">
+                    Ver Curriculum Vitae
+                  </div>
+                </a>
+              </motion.div>
             </div>
           </div>
           {/* Hero Image */}
