@@ -6,10 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #161513;
-}
-
 @layer components {
   .primary-btn {
     @apply bg-blue-600 text-white font-semibold py-3 px-6 rounded-xl shadow-md hover:!scale-110 duration-300;
