@@ -14,7 +14,7 @@ const Footer = () => {
         className="bg-zinc-800 text-white p-5 flex justify-center"
       >
         <div className="container flex flex-col items-center lg:items-stretch">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 py-5">
+          <div className="grid grid-cols-1 lg:flex lg:justify-between gap-5 py-5">
             <FooterLogo />
             <FooterMenu />
             <FooterSocialMedia />
