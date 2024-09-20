@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { getActualYear } from "../../utils/dateUtils";
 import Logo from "../../assets/images/logo.png";
 import { Menu } from "../../mocks/Menu";
 import { SocialMediaLinks } from "../../utils/SocialMediaLinks";
+import FooterCopyright from "../ui/FooterCopyright";
 
 const Footer = () => {
   return (
@@ -82,15 +82,7 @@ const Footer = () => {
             </motion.div>
           </div>
           {/* Copyright Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="pt-5 text-center flex flex-col"
-          >
-            <p>HAC Software {getActualYear()}</p>
-            <p>&copy; Todos los Derechos Reservados</p>
-          </motion.div>
+          <FooterCopyright />
         </div>
       </motion.footer>
     </>
