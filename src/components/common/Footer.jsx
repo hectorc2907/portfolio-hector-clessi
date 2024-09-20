@@ -1,25 +1,23 @@
 import { motion } from "framer-motion";
-import FooterLogo from "../ui/footer/FooterLogo";
-import FooterMenu from "../ui/footer/FooterMenu";
-import FooterCopy from "../ui/footer/FooterCopy";
-import FooterNetwork from "../ui/footer/FooterNetwork";
+import { getActualYear } from "../../utils/dateUtils";
 
 const Footer = () => {
   return (
     <>
-      <footer className="flex justify-center bg-[#1E1E1D] pt-12 mt-12">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="container flex flex-col gap-6"
-        >
-          <FooterLogo />
-          <FooterMenu />
-          <FooterNetwork />
-        </motion.div>
-      </footer>
-      <FooterCopy />
+      <motion.footer
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="bg-zinc-800 text-white p-5 flex justify-center"
+      >
+        <div className="container flex flex-col">
+          <div className="flex">a</div>
+          <div className="pt-5 text-center flex flex-col">
+            <p>HAC Software {getActualYear()}</p>
+            <p>&copy; Todos los Derechos Reservados</p>
+          </div>
+        </div>
+      </motion.footer>
     </>
   );
 };
