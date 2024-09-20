@@ -10,10 +10,10 @@ const NavbarLogo = () => {
       transition={{ duration: 1, delay: 0.5 }}
     >
       <a href="/" className="hidden lg:block">
-        <img src={Logo} alt="" className="w-64" />
+        <img src={Logo} alt="Main Logo of HAC Service" className="w-64" />
       </a>
       <a href="/" className="lg:hidden">
-        <img src={LogoSmall} alt="" className="w-[51px]" />
+        <img src={LogoSmall} alt="Small Logo of HAC Service" className="w-[51px]" />
       </a>
     </motion.div>
   );
