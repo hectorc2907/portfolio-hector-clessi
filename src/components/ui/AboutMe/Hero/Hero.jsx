@@ -1,6 +1,7 @@
 import ImageProfile from "../../../../assets/images/profile.jpg";
 import { motion } from "framer-motion";
 import { calculateAge } from "../../../../utils/dateUtils";
+import HeroTitle from "./HeroTitle";
 
 const Hero = () => {
   return (
@@ -11,29 +12,7 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-start items-center order-2 lg:order-1">
             {/* Hero Title */}
             <div className="text-center">
-              <div className="text-4xl font-semibold">
-                <motion.p
-                  initial={{ opacity: 0, x: -100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                >
-                  ¡Hola!,
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, x: -100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1, delay: 0.7 }}
-                >
-                  Soy <span className="text-blue-700">Hector Clessi</span>
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, x: -100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1, delay: 0.9 }}
-                >
-                  Desarrollador Full-Stack
-                </motion.p>
-              </div>
+              <HeroTitle />
               {/* Hero Description */}
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
