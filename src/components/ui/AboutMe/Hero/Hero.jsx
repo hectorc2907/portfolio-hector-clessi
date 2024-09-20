@@ -1,8 +1,7 @@
-import ImageProfile from "../../../../assets/images/profile.jpg";
-import { motion } from "framer-motion";
 import HeroTitle from "./HeroTitle";
 import HeroDescription from "./HeroDescription";
 import HeroButtonCV from "./HeroButtonCV";
+import HeroImage from "./HeroImage";
 
 const Hero = () => {
   return (
@@ -21,18 +20,7 @@ const Hero = () => {
             </div>
           </div>
           {/* Hero Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="flex justify-center lg:justify-end order-1 lg:order-2"
-          >
-            <img
-              src={ImageProfile}
-              alt="Profile Image Me"
-              className="max-w-80 md:max-w-96 lg:max-w-[450px] xl:max-w-[500px] 2xl:max-w-[600px] shadow-lg shadow-slate-300 rounded-2xl"
-            />
-          </motion.div>
+          <HeroImage />
         </div>
       </section>
     </>
