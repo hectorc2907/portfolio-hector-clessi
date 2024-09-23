@@ -9,7 +9,7 @@ const HeroButtonCV = () => {
       className="flex justify-center mt-4"
     >
       <a
-        href="https://drive.google.com/file/d/1gkwmPfMoajtj-D0CYIEgenw1PS0bK0Wt/view?usp=sharing"
+        href="https://drive.google.com/file/d/1V7z88p-G7UyyqTCFnG49FVErqYWpXHrq/view"
         target="_blank"
       >
         <div className="w-[250px] py-3 text-center border shadow-sm hover:shadow-md hover:shadow-slate-300">

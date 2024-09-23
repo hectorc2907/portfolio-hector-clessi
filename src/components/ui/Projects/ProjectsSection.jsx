@@ -5,7 +5,7 @@ import { TechIcons } from "../../../utils/techIcons";
 const ProjectsSection = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
-      {MyProjects.map((projects, index) => (
+      {[...MyProjects].reverse().map((projects, index) => (
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
