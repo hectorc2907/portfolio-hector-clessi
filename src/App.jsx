@@ -1,9 +1,15 @@
-import React from 'react'
+import { BrowserRouter as Router } from "react-router-dom";
+import MainLayout from "./components/layout/MainLayout";
+import PublicRoutes from "./routes/PublicRoutes";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <Router>
+      <MainLayout>
+        <PublicRoutes />
+      </MainLayout>
+    </Router>
+  );
+};
 
-export default App
+export default App;
