@@ -4,8 +4,10 @@ import Skills from "./Skills/Skills";
 const AboutMe = () => {
   return (
     <>
-      <Hero />
-      <Skills />
+      <section id="aboutMe">
+        <Hero />
+        <Skills />
+      </section>
     </>
   );
 };

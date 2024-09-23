@@ -15,7 +15,7 @@ const Contact = () => {
   };
   return (
     <>
-      <section className="px-5 py-10 flex justify-center">
+      <section id="contact" className="px-5 py-10 flex justify-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
