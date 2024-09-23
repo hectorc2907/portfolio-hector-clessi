@@ -59,7 +59,7 @@ const ContactNetwork = () => {
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.7 }}
+        transition={{ duration: 1, delay: 1.3 }}
         className="bg-[#F83E0C] hover:bg-[#C8407A] w-[250px] rounded-3xl"
       >
         <a
@@ -74,7 +74,7 @@ const ContactNetwork = () => {
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.9 }}
+        transition={{ duration: 1, delay: 1.5 }}
         className="bg-[#1D2A32] hover:bg-[#080808] w-[250px] rounded-3xl"
       >
         <a
@@ -89,7 +89,7 @@ const ContactNetwork = () => {
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1.1 }}
+        transition={{ duration: 1, delay: 1.7 }}
         className="bg-[#72C4EC] hover:bg-[#2599CA] w-[250px] rounded-3xl"
       >
         <a
