@@ -1,7 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu } from "../../../mocks/Menu";
 
-const HeaderMenuResponsive = ({ menuResponsiveActive }) => {
+const HeaderMenuResponsive = ({
+  menuResponsiveActive,
+  setMenuResponsiveActive,
+}) => {
   return (
     <AnimatePresence mode="wait">
       {menuResponsiveActive && (
@@ -24,6 +27,7 @@ const HeaderMenuResponsive = ({ menuResponsiveActive }) => {
                   key={option.id}
                   href={option.link}
                   className="text-xl font-semibold hover:text-slate-200"
+                  onClick={() => setMenuResponsiveActive(false)}
                 >
                   {option.title}
                 </a>

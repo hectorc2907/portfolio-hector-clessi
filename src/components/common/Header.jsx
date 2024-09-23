@@ -26,7 +26,7 @@ const Header = () => {
           />
         </div>
       </motion.header>
-      <HeaderMenuResponsive menuResponsiveActive={menuResponsiveActive} />
+      <HeaderMenuResponsive menuResponsiveActive={menuResponsiveActive} setMenuResponsiveActive={setMenuResponsiveActive} />
     </>
   );
 };
