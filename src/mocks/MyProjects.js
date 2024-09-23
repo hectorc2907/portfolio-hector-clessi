@@ -1,3 +1,5 @@
+import imageProject1 from "../assets/images/img-projects/portfolio.png"
+
 export const MyProjects = [
   {
     id: 0,
@@ -8,6 +10,6 @@ export const MyProjects = [
     technologies: ["React", "Tailwind"],
     repository: "https://github.com/hectorc2907/port-frontend",
     preview: "http://localhost:5173/",
-    img: "../assets/images/img-projects/portfolio.png",
+    img: imageProject1,
   },
 ];
