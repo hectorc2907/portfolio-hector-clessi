@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TechIcons } from "../../../../utils/techIcons";
+import { TechIcons } from "../../../utils/techIcons";
 
 const SkillsTechnological = () => {
   return (

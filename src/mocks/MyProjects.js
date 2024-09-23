@@ -8,6 +8,6 @@ export const MyProjects = [
     technologies: ["React", "Tailwind"],
     repository: "https://github.com/hectorc2907/port-frontend",
     preview: "http://localhost:5173/",
-    img: "https://cdn.avpasion.com/wp-content/uploads/2023/02/guerra-del-manana.jpg",
+    img: "../assets/images/img-projects/portfolio.png",
   },
 ];

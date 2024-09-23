@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { calculateAge } from "../../../../utils/dateUtils";
+import { calculateAge } from "../../../utils/dateUtils";
 
 const HeroDescription = () => {
   return (

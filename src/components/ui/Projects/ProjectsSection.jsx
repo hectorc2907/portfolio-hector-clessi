@@ -12,7 +12,7 @@ const ProjectsSection = () => {
           transition={{ duration: 1, delay: 0.5 + 0.2 * index }}
           className="bg-white flex flex-col border rounded-2xl shadow-md"
         >
-          <img src={projects.img} alt="" className="rounded-t-2xl" />
+          <img src={projects.img} alt={projects.title} className="rounded-t-2xl" />
           <div className="flex-grow text-center">
             <div className="text-4xl font-semibold italic font-guerrilla pt-3">
               {projects.title}
