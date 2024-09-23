@@ -24,4 +24,33 @@ Si deseas clonar este repositorio y ejecutarlo en tu máquina local, sigue estos
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/portfolio-web.git
+   git clone https://github.com/hectorc2907/port-frontend
+
+2. Ve al directorio del proyecto:
+   ```bash
+   cd port-frontend
+   
+3. Instala las dependencias:
+   ```bash
+   npm install
+
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm start
+
+## 🎨 Personalización
+
+Puedes personalizar el portafolio ajustando los archivos de configuración de Tailwind o cambiando el contenido en los componentes de React. Aquí algunos puntos donde podrías hacer ajustes:
+
+- Tailwind CSS: En el archivo tailwind.config.js para cambiar colores, fuentes, espaciados, etc.
+- Animaciones con Framer Motion: Puedes personalizar las transiciones en cualquier componente donde se use motion.
+
+## ✨ Características
+- Animaciones: Uso de Framer Motion para animaciones suaves en el portafolio.
+- Responsividad: El sitio es completamente responsivo, gracias a Tailwind CSS.
+- Navegación: Utilización de React Router para navegar entre las secciones del portafolio.
+- Interactividad: Efectos de hover, transiciones y otras interacciones visuales para mejorar la experiencia de usuario.
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Si tienes alguna idea para mejorar el portafolio o encuentras algún error, siéntete libre de hacer un fork y enviar un pull request.
