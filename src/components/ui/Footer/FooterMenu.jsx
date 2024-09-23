@@ -2,6 +2,18 @@ import { motion } from "framer-motion";
 import { Menu } from "../../../mocks/Menu";
 
 const FooterMenu = () => {
+  const handleSmoothScroll = (event, link) => {
+    event.preventDefault();
+    const offset = 80;
+    const section = document.querySelector(link);
+    const sectionPosition =
+      section.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+      top: sectionPosition,
+      behavior: "smooth",
+    });
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -15,6 +27,7 @@ const FooterMenu = () => {
           <a
             key={option.id}
             href={option.link}
+            onClick={(event) => handleSmoothScroll(event, option.link)}
             className="hover:text-slate-300"
           >
             {option.title}
