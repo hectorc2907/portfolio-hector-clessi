@@ -24,11 +24,11 @@ Si deseas clonar este repositorio y ejecutarlo en tu máquina local, sigue estos
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/hectorc2907/port-frontend
+   git clone https://github.com/hectorc2907/portfolio-hector-clessi
 
 2. Ve al directorio del proyecto:
    ```bash
-   cd port-frontend
+   cd portfolio-hector-clessi
    
 3. Instala las dependencias:
    ```bash
