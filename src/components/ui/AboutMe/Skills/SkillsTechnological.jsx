@@ -5,7 +5,7 @@ const SkillsTechnological = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 1.3 }}
       className="bg-white p-5 text-black rounded-2xl shadow-md shadow-slate-900"
     >

@@ -5,7 +5,7 @@ const SkillsBox = () => {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-black">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.7 }}
         className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900"
       >
@@ -25,7 +25,7 @@ const SkillsBox = () => {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.9 }}
         className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900"
       >
@@ -44,7 +44,7 @@ const SkillsBox = () => {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.1 }}
         className="bg-white flex flex-col p-5 rounded-2xl shadow-md shadow-slate-900"
       >

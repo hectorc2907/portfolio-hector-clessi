@@ -8,7 +8,7 @@ const Skills = () => {
     <>
       <motion.section
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className="bg-blue-900 text-white px-5 py-10 flex justify-center"
       >
