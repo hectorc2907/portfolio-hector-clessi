@@ -2,6 +2,7 @@ import {
   SiHtml5,
   SiCss3,
   SiGithub,
+  SiGit,
   SiJavascript,
   SiTypescript,
   SiReact,
@@ -21,6 +22,8 @@ export const TechIcons = (technology) => {
       return <SiCss3 className="text-[#2D53E5]" />;
     case "github":
       return <SiGithub />;
+      case "git":
+      return <SiGit className="text-[#F05539]" />;
     case "javascript":
       return <SiJavascript className="text-[#EBCC37]" />;
     case "typescript":
