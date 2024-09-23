@@ -6,8 +6,8 @@ const ResumeFormation = () => {
   return (
     <div className="grid grid-cols-1 gap-5">
       <motion.h3
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1}}
         transition={{ duration: 1, delay: 0.5 }}
         className="text-center text-2xl italic"
       >
@@ -17,7 +17,7 @@ const ResumeFormation = () => {
         {[...MyEducation].reverse().map((education, index) => (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 + 0.2 * index }}
             className="grid grid-cols-1 bg-white rounded-2xl px-5 shadow-md shadow-slate-900"
           >
