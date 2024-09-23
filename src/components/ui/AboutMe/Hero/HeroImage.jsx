@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 const HeroImage = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.5 }}
       className="flex justify-center lg:justify-end order-1 lg:order-2"
     >
