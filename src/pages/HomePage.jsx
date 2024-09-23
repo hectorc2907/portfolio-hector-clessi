@@ -1,4 +1,5 @@
-import AboutMe from "../components/ui/AboutMe/AboutMe";
+import Hero from "../components/ui/Hero/Hero";
+import Skills from "../components/ui/Skills/Skills";
 import Projects from "../components/ui/Projects/Projects";
 import Resume from "../components/ui/Resume/Resume";
 import Contact from "../components/ui/Contact/Contact";
@@ -6,7 +7,8 @@ import Contact from "../components/ui/Contact/Contact";
 const HomePage = () => {
   return (
     <>
-      <AboutMe />
+      <Hero />
+      <Skills />
       <Projects />
       <Resume />
       <Contact />

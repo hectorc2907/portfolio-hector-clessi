@@ -5,10 +5,23 @@ const HeaderMenuResponsive = ({
   menuResponsiveActive,
   setMenuResponsiveActive,
 }) => {
+  const handleSmoothScroll = (event, link) => {
+    event.preventDefault();
+    const offset = 80;
+    const section = document.querySelector(link);
+    const sectionPosition =
+      section.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+      top: sectionPosition,
+      behavior: "smooth",
+    });
+    setMenuResponsiveActive(false);
+  };
   return (
     <AnimatePresence mode="wait">
       {menuResponsiveActive && (
-        <div className="absolute lg:hidden top-20 left-0 w-full h-screen z-20">
+        <div className="fixed lg:hidden top-20 left-0 w-full h-screen z-20">
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -27,7 +40,7 @@ const HeaderMenuResponsive = ({
                   key={option.id}
                   href={option.link}
                   className="text-xl font-semibold hover:text-slate-200"
-                  onClick={() => setMenuResponsiveActive(false)}
+                  onClick={(event) => handleSmoothScroll(event, option.link)}
                 >
                   {option.title}
                 </a>

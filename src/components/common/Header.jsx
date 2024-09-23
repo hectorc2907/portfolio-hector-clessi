@@ -16,7 +16,7 @@ const Header = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="bg-blue-900 p-5 flex justify-center shadow-2xl shadow-slate-400"
+        className="bg-blue-900 p-5 flex justify-center shadow-2xl sticky top-0 z-10"
       >
         <div className="container flex justify-between items-center">
           <HeaderLogo />
