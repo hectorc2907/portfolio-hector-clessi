@@ -1,3 +1,4 @@
+import { MyEducation } from "../../../mocks/MyEducation";
 import { MyExperience } from "../../../mocks/MyExperience";
 
 const Resume = () => {
@@ -8,13 +9,13 @@ const Resume = () => {
           <h2 className="text-4xl italic font-semibold text-center">
             Trayectoria
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-14">
             <div className="grid grid-cols-1 gap-5">
               <h3 className="text-center text-2xl italic">
                 Experiencia Profesional
               </h3>
-              <div className="grid grid-cols-1 gap-5 text-black">
-                {MyExperience.reverse().map((experience) => (
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 text-black">
+                {[...MyExperience].reverse().map((experience) => (
                   <div className="grid grid-cols-1 bg-white rounded-2xl px-5 shadow-md shadow-slate-900">
                     <p className="text-center text-xl font-semibold">
                       {experience.position}
@@ -28,7 +29,22 @@ const Resume = () => {
                 ))}
               </div>
             </div>
-            <div className="grid grid-cols-1"></div>
+            <div className="grid grid-cols-1 gap-5">
+              <h3 className="text-center text-2xl italic">Formación</h3>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 text-black">
+                {[...MyEducation].reverse().map((education) => (
+                  <div className="grid grid-cols-1 bg-white rounded-2xl px-5 shadow-md shadow-slate-900">
+                    <a href={education.link}>
+                      <p className="text-center text-xl font-semibold">
+                        {education.title}
+                      </p>
+                    </a>
+                    <p className="text-center py-5">{education.description}</p>
+                    <p>Institución: {education.institution}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
